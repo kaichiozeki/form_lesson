@@ -27,9 +27,93 @@
             <p class="is-defaultText">アカウント情報</p>
           </div>
           <form class="form-content" action="#" method="POST">
-            <!--
-              ここに続きのHTMLを書いていきましょう
-            -->
+            <div class="top_margin name-box">
+              <div class="name namewidth">
+                <p class="entire-text">名字
+                  <span class="alert"> ※</span>
+                </p>
+                <input type="text" name="last_name" class="input-area input-init" required>
+              </div>
+              <div class="name namewidth">
+                <p class="entire-text">名前
+                  <span class="alert"> ※</span>
+                </p>
+                <input type="text" name="first_name" class="input-area input-init" required>
+              </div>
+            </div>
+            <div class="top_margin gender">
+              <p class="entire-text">性別</p>
+              <div class="gender-contents">
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="male" class="gender-input">
+                  <span>男性</span>
+                </label>
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="female" class="gender-input">
+                  <span>女性</span>
+                </label>
+                <label class="gender-content">
+                  <input type="radio" name="gender" value="other" class="gender-input">
+                  <span>その他</span>
+                </label>
+              </div>
+            </div>
+            <div class="top_margin birthplace">
+              <p class="entire-text">出身</p>
+              <div class="birthplace-area">
+                <select name="from-area" id="from-area" class="input-init input-area input-birthplace">
+                  <option value="東京">東京</option>
+                  <option value="千葉">千葉</option>
+                  <option value="埼玉">埼玉</option>
+                  <option value="神奈川">神奈川</option>
+                </select>
+              </div>
+            </div>
+            <div class="top_margin email">
+              <p class="entire-text">
+                Eメール
+                <span class="alert"> ※</span>
+              </p>
+              <input type="email" class="input-init input-area" name="email" placeholder="ex) hoge@example.com" required>
+            </div>
+            <div class="top_margin tel">
+              <p class="entire-text">電話番号</p>
+              <input type="tel" class="input-init input-area" name="tel" placeholder="ex)09012345678">
+            </div>
+            <div class="top_margin password">
+              <p class="entire-text">パスワード
+                <span class="alert"> ※</span>
+              </p>
+              <input type="password" class="input-init input-area" name="password" required>
+            </div>
+            <div class="top_margin password">
+              <p class="entire-text">パスワード(確認用)
+                <span class="alert"> ※</span>
+              </p>
+              <input type="password" class="input-init input-area" name="password-confirm" required>
+            </div>
+            <div class="top_margin course">
+              <p class="entire-text">希望コース</p>
+              <div class="course-option">
+                <input type="checkbox" name="course" value="frontend" id="frontend">
+                <label class="course-option-text" for="frontend">フロントエンド</label>
+              </div>
+              <div class="course-option">
+                <input type="checkbox" name="course" value="backend" id="backend">
+                <label class="course-option-text" for="backend">バックエンド</label>
+              </div>
+              <div class="course-option">
+                <input type="checkbox" name="course" value="app" id="app">
+                <label class="course-option-text" for="app">アプリ</label>
+              </div>
+            </div>
+            <div class="top_margin remarks">
+              <p class="entire-text">備考</p>
+              <textarea class="input-init input-area remarks-box" name="remarks" placeholder="何かあればご記入ください"></textarea>
+            </div>
+            <div class="top_margin">
+              <input type="submit" value="アカウント作成" class="input-init button submit-btn is-fullWidth">
+            </div>
             <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>
