@@ -370,12 +370,12 @@
   border: 1px solid #01bfbd;
 }
 
-.submit-btn:active {
+.button:hover {
+  background-color: #01a6a4;
+}
+.button:active {
   color: #01bfbd;
   background-color: #fff;
 }
 
-.button:hover {
-  background-color: #01a6a4;
-}
 
