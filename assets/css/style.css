@@ -206,6 +206,7 @@
 
 .input-area:focus {
   border: #01bfbd solid 1px;
+  background-color: #fff;
 }
 
 .entire-text {
